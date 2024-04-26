@@ -13,7 +13,7 @@ export const AxiosInterceptor = () => {
     
     useEffect(() => {
         if (!authTokens) {
-            return () => {}; // Devuelve una función vacía si authTokens no está definido
+            return () => {}; 
         }
     
         const requestInterceptor = axios.interceptors.request.use((request) => {
@@ -42,11 +42,10 @@ export const AxiosInterceptor = () => {
         );
     
         return () => {
-            // Limpiar los interceptores cuando el componente se desmonte
             axios.interceptors.request.eject(requestInterceptor);
             axios.interceptors.response.eject(responseInterceptor);
         };
-    }, [authTokens]); // Ejecutar el efecto solo cuando authTokens cambie
+    }, [authTokens]); 
     
 
     return null

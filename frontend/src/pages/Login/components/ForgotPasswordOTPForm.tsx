@@ -93,7 +93,6 @@ export const ForgotPasswordOTPForm = ({ email, errors, setErrors, isLoading, set
                 if (!response.ok) {
                     throw new Error(data.msg);
                 }
-                // poner los jwts
                 toast({ title: "Success", description: "Password changed!", duration: 3000 })
                 navigate('/')
 
