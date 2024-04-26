@@ -1,0 +1,1 @@
+export const urlBase: string = "http://localhost:8000"

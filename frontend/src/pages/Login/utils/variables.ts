@@ -1,0 +1,5 @@
+export const BACK_FROM_IS_REGISTERED_FORM = "IsRegisteredForm"
+export const BACK_FROM_OTP_FORM = "OtpForm"
+export const BACK_FROM_IS_NOT_REGISTERED_FORM_EMAIL = "IsNotRegisteredFormEmail"
+export const BACK_FROM_IS_NOT_REGISTERED_FORM_GOOGLE = "IsNotRegisteredFormGoogle"
+export const BACK_FROM_FORGOT_PASSWORD = "forgot"
